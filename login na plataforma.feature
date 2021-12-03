@@ -18,9 +18,9 @@
             Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
 
             Esquema do Cenário: Autenticar múltiplos usuários
-            Quando eu digitar o <usuario>
-            E a <senha>
-            Então deve <direcionar para a tela de checkout>
+            Quando eu digitar "joao@ebacshop.com.br"
+            E "teste@123"
+            Então "Sim"
 
             Exemplos:
             | usuario                  | senha       | direcionar para a tela de checkout |
