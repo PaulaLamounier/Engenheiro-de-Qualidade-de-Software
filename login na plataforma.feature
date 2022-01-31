@@ -8,22 +8,22 @@
             Contexto: Dado que eu acesse a página de autenticação da EBAC-SHOP
 
             Cenário: Autenticação válida
-            Quando eu digitar o usuário "fulano@ebacshop.com.br"
-            E a senha "senha@1234"
-            Então deve direcionar para a tela de checkout
+            Quando eu digitar o <usuario> "fulano@ebacshop.com.br"
+            E a <senha> "senha@1234"
+            Então deve <redirecionar>.
 
             Cenário: Usuário ou senha inválidos
-            Quando eu digitar o usuário "aaauioooqijk@ebacshop.com.br"
-            E a senha "iu9872384"
+            Quando eu digitar o <usuario> "aaauioooqijk@ebacshop.com.br"
+            E a <senha> "iu9872384"
             Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
 
             Esquema do Cenário: Autenticar múltiplos usuários
-            Quando eu digitar "joao@ebacshop.com.br"
-            E "teste@123"
-            Então "Sim"
+            Quando eu digitar usuário <usuario> 
+            E senha <senha> 
+            Então <redirecionar> redirecionar para tela de checkout
 
             Exemplos:
-            | usuario                  | senha       | direcionar para a tela de checkout |
+            | usuario                  | senha       | redirecionar                       |
             | "joao@ebacshop.com.br"   | "teste@123" | "Sim"                              |
             | "mariao@ebacshop.com.br" | "teste@123" | "Não"                              |
             | "ana@ebacshop.com.br"    | "teste@123" | "Não                               |
